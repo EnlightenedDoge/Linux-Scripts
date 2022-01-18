@@ -23,6 +23,22 @@ do
         line[1]="$optional/"
     fi
     cp -R "$line" ./"${line[1]}"
+    
+    echo "${line}"
+    echo "$optional"
+    IFS='/' read -ra fname <<< "${line[@]}"
+    fname="${fname[@]:(-1)}"
+    echo $fname
+    if [ ! -z "$optional" ];  then
+        isgit=`find ./"$optional"/ -name ".git"`
+        echo "$isgit"
+        [ ! -z "$isgit" ]&&rm -r "$isgit"
+    elif [ -d ./$fname ]; then
+        isgit=`find ./$fname/ -name ".git"`
+        echo $fname"\n$isgit"
+        [ ! -z "$isgit" ]&&rm -r "$isgit"
+    fi
+    optional=""
 done < "$conf"
 
 git add .
