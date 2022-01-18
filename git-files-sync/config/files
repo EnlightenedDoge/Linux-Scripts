@@ -6,4 +6,5 @@
 ~/.config/i3/i3blocks.conf i3 config
 ~/.config/i3status/config i3status config
 ~/.config/i3blocks
+~/.bashrc
 /mnt/Data/SteamLibrary/steamapps/compatdata/374320/pfx/drive_c/users/steamuser/AppData/Roaming/DarkSoulsIII/0110000107c55549/ DarkSoulsIII save

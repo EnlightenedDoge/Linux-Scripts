@@ -1,4 +1,5 @@
 #!/bin/bash
+SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 src='https://github.com/EnlightenedDoge/linux-configs.git'
 IFS='/' read -ra repo <<< $src
 repo="${repo[-1]}"
@@ -9,7 +10,7 @@ repo="${repo:0:(-4)}"
 dest="$HOME/Documents/"
 #Where is the config file in which the path to 
 #the files/direcotries to sync is stored
-conf=$(pwd)/config/files
+conf=$(SCRIPTPATH)/config/files
 
 cd "$dest"
 if [ ! -d "$repo" ]; then
