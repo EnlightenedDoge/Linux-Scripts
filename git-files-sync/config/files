@@ -1,3 +1,4 @@
+#path-to-file/direcotry foldername
 ~/.config/i3/config i3 config
 ~/.config/i3/cat-killer.sh i3 config
 ~/.config/i3/mystartup.sh i3 config
@@ -5,3 +6,4 @@
 ~/.config/i3/i3blocks.conf i3 config
 ~/.config/i3status/config i3status config
 ~/.config/i3blocks
+/mnt/Data/SteamLibrary/steamapps/compatdata/374320/pfx/drive_c/users/steamuser/AppData/Roaming/DarkSoulsIII/0110000107c55549/ DarkSoulsIII save
