@@ -10,7 +10,7 @@ repo="${repo:0:(-4)}"
 dest="$HOME/Documents/"
 #Where is the config file in which the path to 
 #the files/direcotries to sync is stored
-conf=$(SCRIPTPATH)/config/files
+conf="$SCRIPTPATH"/config/files
 
 cd "$dest"
 if [ ! -d "$repo" ]; then
